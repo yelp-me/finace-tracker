@@ -1,0 +1,82 @@
+/* General layout */
+body {
+  background-color: #F9FAFB;
+  color: #1F2937; /* Dark gray for text */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#UserInputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+  background-color: #ffffff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styles */
+.MuiFormControl-root {
+  width: 250px;
+}
+
+.MuiTextField-root, .MuiSelect-root {
+  background-color: #ffffff; /* White background for inputs */
+  border-radius: 8px;
+}
+
+/* Button styles */
+.MuiButton-root {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-transform: none;
+  color: #ffffff;
+  background-color: #3B82F6; /* Primary color (blue) */
+  border: none;
+}
+
+.MuiButton-root:hover {
+  background-color: #2563EB; /* Darker blue on hover */
+}
+
+/* Table styles */
+.MuiTable-root {
+  width: 100%;
+}
+
+.MuiTableCell-root {
+  padding: 10px 20px;
+  border-bottom: 1px solid #E5E7EB; /* Light gray border */
+}
+
+.MuiTableContainer-root {
+  margin-top: 20px;
+}
+
+.MuiTableHead-root {
+  background-color: #F3F4F6; /* Light gray for table headers */
+  color: #1F2937; /* Dark gray text for headers */
+}
+
+.MuiTableRow-root:hover {
+  background-color: #F3F4F6; /* Light hover effect for table rows */
+}
+
+/* Error message styles */
+.MuiFormHelperText-root {
+  color: #EF4444; /* Red color for errors */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #UserInputs {
+    flex-direction: column;
+  }
+  .MuiFormControl-root {
+    width: 100%;
+  }
+}
